@@ -6,7 +6,7 @@
 # License:  MIT License
 # ---------------------------------------------------------
 # Implementation of a simple fixed-bed advection-dispersion
-# scenario in one dimension with MATLAB's pdepe function.
+# scenario in one dimension with Julia.
 #
 # SCENARIO: Consider  a fixed bed of length L = 10 m with a
 # constant inlet concentration C_in = 100 mg/L. Initially,
