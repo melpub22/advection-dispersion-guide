@@ -19,6 +19,9 @@
 % conditions set for this scenario may not be applicable to
 % your scenario.
 
+# NOTE: This same scenario is implemented in Julia at:
+# https://github.com/melpub22/advection-dispersion-guide/tree/main/AdvectionDispersion1D/julia_ade_1d.jl
+
 t_max = 2000;   % Duration of study, s
 L_max = 10;     % Length of fixed bed, m
  
