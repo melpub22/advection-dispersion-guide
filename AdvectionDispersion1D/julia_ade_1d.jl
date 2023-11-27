@@ -8,7 +8,7 @@
 # Implementation of a simple fixed-bed advection-dispersion
 # scenario in one dimension with Julia.
 #
-# SCENARIO: Consider  a fixed bed of length L = 10 m with a
+# SCENARIO: Consider a fixed bed of length L = 10 m with a
 # constant inlet concentration C_in = 100 mg/L. Initially,
 # the bed contains no fluid. Fluid begins to flow into the
 # bed with a velocity of v = 1e-3 m/s and the dispersion
@@ -22,6 +22,9 @@
 # conditions set for this scenario may not be applicable to
 # your scenario.
 # =========================================================
+
+# NOTE: This same scenario is implemented in MATLAB at:
+# https://github.com/melpub22/advection-dispersion-guide/tree/main/AdvectionDispersion1D/matlab_ade_1d_pdepe.m
 
 using DomainSets, ModelingToolkit, MethodOfLines, OrdinaryDiffEq, Plots
 
