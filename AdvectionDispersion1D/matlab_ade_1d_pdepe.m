@@ -7,20 +7,24 @@
 % ---------------------------------------------------------
 % Implementation of a simple fixed-bed advection-dispersion
 % scenario in one dimension with MATLAB's pdepe function.
-% SCENARIO: Consider  a fixed bed of length L = 10 m with a
+%
+% SCENARIO: Consider a fixed bed of length L = 10 m with a
 % constant inlet concentration C_in = 100 mg/L. Initially,
 % the bed contains no fluid. Fluid begins to flow into the
 % bed with a velocity of v = 1e-3 m/s and the dispersion
 % coefficient is D = 2e-2 m^2/s.
+%
 % OUTPUTS: A plot of concentration profiles in the bed over
 % time and a breakthrough curve.
+%
 % LIMITATIONS: This is a single-species scenario, and only
 % advection and dispersion are considered. The boundary
 % conditions set for this scenario may not be applicable to
 % your scenario.
+% =========================================================
 
-# NOTE: This same scenario is implemented in Julia at:
-# https://github.com/melpub22/advection-dispersion-guide/tree/main/AdvectionDispersion1D/julia_ade_1d.jl
+% NOTE: This same scenario is implemented in Julia at:
+% https://github.com/melpub22/advection-dispersion-guide/tree/main/AdvectionDispersion1D/julia_ade_1d.jl
 
 t_max = 2000;   % Duration of study, s
 L_max = 10;     % Length of fixed bed, m
