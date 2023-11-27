@@ -54,7 +54,7 @@ xlabel("Time t, s")
 ylabel("Outlet concentration u_r, mg/L")
  
 function [c, f, s] = pde_cfs(x, t, u, DuDx)
-    D = 2e-2;           % Dispersion, m^2/s
+    D = 2e-2;           % Dispersion coefficient, m^2/s
     v = 1e-3;           % Velocity, m/s
  
     c = 1;              % c-function required for pdepe()
