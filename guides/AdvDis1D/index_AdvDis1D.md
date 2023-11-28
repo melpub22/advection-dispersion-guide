@@ -1,7 +1,7 @@
 # 1D Advection Dispersion equation
 
 ## MATLAB
-* [Full tutorial: 1D Advection Dispersion equation using pdepe](AdvectionDispersion1D/guide-matlab-ade-1d-pdepe.html)
+* [Full tutorial: 1D Advection Dispersion equation using pdepe](AdvectionDispersion1D/guide_matlab_ade_1d_pdepe.md)
 * [Sample script (matlab_ade_1d_pdepe.m)](matlab_ade_1d_pdepe.m)
 
 ## Julia
