@@ -133,9 +133,9 @@ end
 ```
 
 ### Results
-Below are the output plots. Notice that at $x=0 \, \textup{m}$, each concentration value is held at 100 mg/L as a consequence of the inlet boundary conditions. Additionally, at $x=10 \, \textup{m}$, notice that each curve becomes horizontal. This is due to our outlet boundary conditions.
+Below are the output plots. Notice that at $`x=0\,\textup{m}`$, each concentration value is held at 100 mg/L as a consequence of the inlet boundary conditions. Additionally, at $`x=10\,\textup{m}`$, notice that each curve becomes horizontal. This is due to our outlet boundary conditions.
 
-The outlet boundary conditions may not be accurate for your use case - for example, if the bed outlet enters the atmosphere, then the fluid concentration may be held at 0 mg/L at $x=0 \, \textup{m}$, instead.
+The outlet boundary conditions may not be accurate for your use case - for example, if the bed outlet enters the atmosphere, then the fluid concentration may be held at 0 mg/L at $`x=0\,\textup{m}`$, instead.
 
 ![Concentration profiles](img/guide_matlab_ade_1d_pdepe_profiles.png "Concentration profiles")
 
