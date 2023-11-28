@@ -8,7 +8,7 @@ This tutorial's concents are licensed under the MIT License, a free and open sou
 ## Scenario: Constant inlet concentration
 
 ### Problem statement
-Consider a fixed bed of length $L=\, \textup{m}$ with a constant inlet concentration $C_{in}=100\, \textup{mg/L}$. Initially, the bed contains no fluid. Fluid begins to flow into the bed with a velocity of $v=1\times10^{-3}\, \textup{m/s}$ and the dispersion coefficient is $D=2\times10^{-2}\, \textup{m^2/s}$.
+Consider a fixed bed of length $L= \, \textup{m}$ with a constant inlet concentration $C_{in}=100 \, \textup{mg/L}$. Initially, the bed contains no fluid. Fluid begins to flow into the bed with a velocity of $v=1\times10^{-3} \, \textup{m/s}$ and the dispersion coefficient is $D=2\times 10^{-2} \, \textup{m^2/s}$.
 
 ### Formulating the problem
 The Advection Dispersion equation (ADE) has the following form:
@@ -49,7 +49,7 @@ $$p_l(x,t,u)=u_l-100$$
 $$q_l(x,t)=0$$
 
 ### Setting the outlet boundary condition
-While the outlet boundary condition depends heavily on the scenario (do not blindly copy this boundary condition into your simulations without understanding is), for this scenario, a common assumption will be used: at $x=L,\, \frac{\partial u}{\partial x}=0$. Using the boundary condition form and setting $q_r(x,t)=1$ yields:
+While the outlet boundary condition depends heavily on the scenario (do not blindly copy this boundary condition into your simulations without understanding is), for this scenario, a common assumption will be used: at $x=L \, \frac{\partial u}{\partial x}=0$. Using the boundary condition form and setting $q_r(x,t)=1$ yields:
 
 $$p_r(x,t,u)+f\left(x,t,u,\frac{\partial u}{\partial x}\right)=0$$
 
@@ -62,7 +62,7 @@ Therefore, $p_r(x,t,u)+D\frac{\partial u}{\partial x}-vu_r=0$ must match $\frac{
 $$p_r(x,t,u)=vu_r$$
 $$q_r(x,t)=1$$
 
-Where $v=1\times10^{-3}\, \textup{m/s}$.
+Where $v=1\times10^{-3} \, \textup{m/s}$.
 
 ### Setting the initial condition
 Initially, the bed contains none of the fluid of interest, so:
@@ -133,9 +133,9 @@ end
 ```
 
 ### Results
-Below are the output plots. Notice that at $x=0\,\textup{m}$, each concentration value is held at 100 mg/L as a consequence of the inlet boundary conditions. Additionally, at $x=10\,\textup{m}$, notice that each curve becomes horizontal. This is due to our outlet boundary conditions.
+Below are the output plots. Notice that at $x=0 \, \textup{m}$, each concentration value is held at 100 mg/L as a consequence of the inlet boundary conditions. Additionally, at $x=10 \, \textup{m}$, notice that each curve becomes horizontal. This is due to our outlet boundary conditions.
 
-The outlet boundary conditions may not be accurate for your use case - for example, if the bed outlet enters the atmosphere, then the fluid concentration may be held at 0 mg/L at $x=0\,\textup{m}$, instead.
+The outlet boundary conditions may not be accurate for your use case - for example, if the bed outlet enters the atmosphere, then the fluid concentration may be held at 0 mg/L at $x=0 \, \textup{m}$, instead.
 
 ![Concentration profiles](img/guide_matlab_ade_1d_pdepe_profiles.png "Concentration profiles")
 
